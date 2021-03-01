@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="@string/appName"
+        android:textSize="28sp"
+        android:background="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="32dp"
+                    android:minWidth="32dp"
+                    android:background="@drawable/ic_baseline_search_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_gravity="center"
+                    android:text="Контактов: "/>
+                <TextView
+                    android:id="@+id/ContactCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_gravity="center"
+                    android:text="number"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/shape_round_main_color"
+                android:text="+"
+                android:textColor="@color/colorText"
+                android:textSize="28sp"
+                android:textFontWeight="1500"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorText"/>
+        <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="LinearLayoutManager"
+            android:id="@+id/ContactsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

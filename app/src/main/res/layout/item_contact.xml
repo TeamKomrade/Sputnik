@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="5dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/shape_round">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round">
+                <ImageView
+                    android:id="@+id/PhotoImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="48dp"
+                    android:minHeight="48dp"
+                    android:maxWidth="64dp"
+                    android:minWidth="64dp"
+                    android:background="@drawable/shape_round"/>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/NicknameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                android:text="Фамилия Имя Отчество"/>
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>
