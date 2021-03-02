@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginVertical="5dp">
     <FrameLayout
+        android:id="@+id/ItemFrameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
-        android:background="@drawable/shape_round">
+        android:background="@drawable/shape_semiround">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_round">
+                android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/PhotoImageView"
                     android:layout_width="wrap_content"
@@ -24,8 +27,7 @@
                     android:maxHeight="48dp"
                     android:minHeight="48dp"
                     android:maxWidth="64dp"
-                    android:minWidth="64dp"
-                    android:background="@drawable/shape_round"/>
+                    android:minWidth="64dp"/>
             </FrameLayout>
             <TextView
                 android:id="@+id/NicknameTextView"
@@ -41,3 +43,4 @@
 
     </FrameLayout>
 </FrameLayout>
+</layout>

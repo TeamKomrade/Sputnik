@@ -50,6 +50,7 @@
 
             </LinearLayout>
             <Button
+                android:id="@+id/AddContactButton"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="right"
